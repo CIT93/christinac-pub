@@ -4,20 +4,25 @@
 // 1. Count the members of your household.
 const myHouseMembers = 2;
 // 2. Consider the size of your home
-    const myHouseSize = 7;
+const myHouseSize = 7;
 // 3. Evaluate your food choices
-    const myFoodChoice = 16;
+const myFoodChoice = 16;
 // 4. Examine your water consumption
-    const myWaterConsumption = 3;
+const myWaterConsumption = 3;
 // 5. Determine how many household purchases you make each year.
-    const myHousePurchases = 4;
+const myHousePurchases = 4;
 // 6. Consider how much waste you produce
-    const myHouseWaste = 40;
+const myHouseWaste = 40;
 // 7. Identify the amount of waste that you recycle
-    const myHouseRecycle = 12;
+const myHouseRecycle = 12;
 // 8. Tally up your annual transportation scores.
-    const myTransportation = 6;
+const myTransportation = 6;
+
 // 9. Add up your points
-    const cfpTotal = myHouseMembers + myHouseSize + myFoodChoice + myWaterConsumption + myHousePurchases + myHouseWaste + myHouseRecycle + myTransportation
+const cfpTotal = myHouseMembers + myHouseSize + myFoodChoice + myWaterConsumption + myHousePurchases + myHouseWaste + myHouseRecycle + myTransportation;
+
+// Select the <h1> element and update its content
+document.addEventListener("DOMContentLoaded", () => {
     const myHeadings = document.querySelector("h1");
-    myHeadings.textContent = "104";
+    myHeadings.textContent = "My carbon Footprint is " + cfpTotal;
+});
