@@ -26,4 +26,26 @@ let carbonFootprintPoints = 0;
 // global scope
 
 determinePoints(3)
-determinePoints(4)
+determinePoints(2)
+
+//Consider the size of your home
+
+function determineHouseSizePoints(SizeOfHouse) {
+    console.log("Inside the function");
+if (SizeOfHouse === "Large House") {
+    carbonFpPoint = carbonFpPoint + 10;
+} else if(SizeOfHouse === "medium-sized house") {
+    carbonFpPoint = carbonFpPoint + 7;
+} else if(SizeOfHouse === "small house") {
+    carbonFpPoint = carbonFpPoint + 4;
+} else if(SizeOfHouse === "apartment") {
+    carbonFpPoint = carbonFpPoint + 2;
+}
+console.log(`Based on the size of your House: ${SizeOfHouse}, the points would be ${carbonFpPoint}`);
+}
+
+let carbonFpPoint = 0;
+
+// global scope
+
+determineHouseSizePoints("medium-sized house")
